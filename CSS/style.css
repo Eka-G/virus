@@ -1,0 +1,141 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Commissioner', sans-serif;
+    font-size: 18px;
+    line-height: 2em;
+    color: #4B4F51;
+    background-color: #FFF8F8;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #035755;
+}
+
+h2{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #035755;
+}
+
+h3{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: #FA5652;
+}
+
+li{
+    list-style-type: none;
+}
+
+button{
+    border: 2px solid #FB4C47;
+    border-radius: 40px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #FB4C47;
+}
+
+/* HEADER */
+header{
+    margin: 30px;
+}
+
+.nav__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav__right-panel {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__name {
+    margin: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #035755;
+}
+
+.nav__elem {
+    margin: 20px;
+    font-weight: 700;
+    color: #035755;
+}
+
+.nav__elem:last-child{
+    margin-right: 40px;
+}
+
+.nav__contact {
+    width: 155px;
+    height: 55px;
+    color: #FB4C47;
+    background-color: transparent;
+}
+
+/* introduction */
+
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 300px 0 200px 0;
+    text-transform: capitalize;
+}
+
+.introduction__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.introduction__title{
+    font-size: 32px;
+    color: #FB4C47;
+}
+
+.introduction__text {
+    margin: 30px 0;
+    font-size: 24px;
+} 
+
+.introduction__img {
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
+
+.introduction__help-button{
+    margin: 20px 0;
+    width: 250px;
+    height: 80px;
+    font-size: 24px;
+    text-transform: capitalize;
+}
