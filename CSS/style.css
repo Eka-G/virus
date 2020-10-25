@@ -59,6 +59,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: left;
 }
 
 .column-center {
@@ -172,7 +173,7 @@ header {
     left: -250px;
 }
 
-.about-us_title {
+.about-us__title {
     margin-bottom: 15px;
 }
 
@@ -191,9 +192,6 @@ header {
 
 /* contagion */
 .contagion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 190px;
 }
 
@@ -220,5 +218,51 @@ header {
 
 .contagion__case-title {
     font-size: 36px;
+    color: #035755;
+}
+
+/* symptomps */
+.symptomps {
+    margin-bottom: 155px;
+}
+
+/* protection */
+.protection{
+    margin-bottom: 190px;
+}
+
+.protection__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.protection__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.protection__description {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.protection__number {
+    display: block;
+    margin-right: 40px;
+    padding-top: 20px;
+    width: 75px;
+    height: 75px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: #FA5652;
+    border-radius: 50%;
+    background-color: rgba(250, 86, 82, 0.15);
+}
+
+.protection__item-title {
+    margin-bottom: 20px;
+    font-size: 47px;
     color: #035755;
 }
