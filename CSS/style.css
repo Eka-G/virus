@@ -227,9 +227,9 @@ header {
 }
 
 /* protection */
-.protection{
+/* .protection{
     margin-bottom: 190px;
-}
+} */
 
 .protection__item {
     display: flex;
@@ -248,7 +248,7 @@ header {
 }
 
 .protection__number {
-    display: block;
+    /* display: block; */
     margin-right: 40px;
     padding-top: 20px;
     width: 75px;
@@ -265,4 +265,88 @@ header {
     margin-bottom: 20px;
     font-size: 47px;
     color: #035755;
+}
+
+/* statistics */
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.statistics__map {
+    margin-left: -5;
+    box-shadow: 0px 7px 95px rgba(0, 0, 0, 0.07);
+}
+
+.statistics__rating {
+    padding: 55px;
+    min-width: 505px;
+    box-shadow: 0px 7px 95px rgba(0, 0, 0, 0.07);
+    z-index: 0;
+}
+
+.statistics__heading, .statistics__table {
+    width: 100%;
+}
+
+.statistics__title {
+   font-size: 48px; 
+}
+
+.statistics__heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistics__sheets {
+    display: flex;
+    justify-content: center;
+    width: 85px;
+    height: 50px;
+    box-shadow: 0px 5px 50px rgba(87, 1, 0, 0.1);
+    border-radius: 6px;
+}
+
+.statistics__table {
+    vertical-align: center;
+    font-weight: 700;
+    color: #13615F;
+}
+
+.statistics__table td{
+    padding: 20px 22px 20px 0px;
+}
+
+table td:nth-of-type(1) {
+    width: 50px;
+}
+
+table td:nth-of-type(2) {
+    width:  40%;
+    font-size: 31px;
+    text-align: left;
+}
+
+table td:nth-of-type(3) {
+    width:  40%;
+    font-size: 24px;
+    text-align: right;
+}
+
+table td:last-child {
+    padding-right: 0;
+}
+
+.statistics__table-arrow{
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #F44A45;
+}
+
+/* feedback */
+.feedback {
+    margin: 0 auto;
 }
