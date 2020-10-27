@@ -15,7 +15,7 @@
     <body>
         <div class="container">
             <header>
-                <nav class="nav__header">
+                <nav class="nav__header" id="Overview">
                     <div class="nav__logo">
                         <img src="img/logo.svg" alt="Logotype" class="logo__img">
                         <span class="logo__name">covid-XX</span>
@@ -23,10 +23,18 @@
 
                     <div class="nav__right-panel">
                         <ul class="nav__menu">
-                            <li class="nav__item">Overview</li>
-                            <li class="nav__item">Contagion</li>
-                            <li class="nav__item">Symptoms</li>
-                            <li class="nav__item">Prevention</li>
+                            <li class="nav__item nav__item--active">
+                                <a href="#Overview">Overview</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#Contagion">Contagion</a> 
+                            </li>
+                            <li class="nav__item">
+                                <a href="#Symptoms">Symptoms</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#Prevention">Prevention</a> 
+                            </li>
                         </ul>
                         <button class="nav__contact-button">Contact</button>
                     </div>
@@ -56,7 +64,7 @@
                     </div>  
                 </section>
 
-                <section class="contagion column-center">
+                <section class="contagion column-center" id="Contagion">
                     <div class="contagion__description column-center col-6">
                         <h3 class="contagion__sup-title">Covid-19</h2>
                         <h2 class="contagion__title">Contagion</h2>
@@ -64,27 +72,34 @@
                     </div>  
 
                     <div class="contagion__cases col-12">
-                        <div class="contagion__item column-center">
-                            <img src="img/Contagion-1.svg" alt="Air transmission" class="contagion__case-img">
-                            <h3 class="contagion__case-title">Air transmission</h3>
-                            <p class="contagion__case-text">Objectively evolve tactical expertise before extensible initiatives. Efficiently simplify</p>
+                        <div class="contagion__item-wrapper">
+                                <div class="contagion__item column-center">
+                                <img src="img/Contagion-1.svg" alt="Air transmission" class="contagion__case-img">
+                                <h3 class="contagion__case-title">Air transmission</h3>
+                                <p class="contagion__case-text">Objectively evolve tactical expertise before extensible initiatives. Efficiently simplify</p>
+                            </div>
                         </div>
+                        
                 
-                        <div class="contagion__item column-center">
-                            <img src="img/Contagion-2.svg" alt="Human contacts" class="contagion__case-img">
-                            <h3 class="contagion__case-title">Human contacts</h3>
-                            <p class="contagion__case-text">Washing your hands is one of thesimplest ways you can protect</p>
+                        <div class="contagion__item-wrapper">
+                            <div class="contagion__item column-center">
+                                <img src="img/Contagion-2.svg" alt="Human contacts" class="contagion__case-img">
+                                <h3 class="contagion__case-title">Human contacts</h3>
+                                <p class="contagion__case-text">Washing your hands is one of thesimplest ways you can protect</p>
+                            </div>
                         </div>
                     
-                        <div class="contagion__item column-center">
-                            <img src="img/Contagion-3.svg"" alt="Containted objects" class="contagion__case-img">
-                            <h3 class="contagion__case-title">Containted objects</h3>
-                            <p class="contagion__case-text">Use the tissue while sneezing,In this way, you can protect your droplets.</p>
+                        <div class="contagion__item-wrapper">
+                            <div class="contagion__item column-center">
+                                <img src="img/Contagion-3.svg"" alt="Containted objects" class="contagion__case-img">
+                                <h3 class="contagion__case-title">Containted objects</h3>
+                                <p class="contagion__case-text">Use the tissue while sneezing,In this way, you can protect your droplets.</p>
+                            </div>
                         </div>
                     </div> <!-- contagion__cases -->
                 </section>
 
-                <section class="symptomps column-center col-12">
+                <section class="symptomps column-center col-12" id="Symptoms">
                     <div class="symptomps__description column-center col-6">
                         <h3 class="symptomps__sup-title">Covid-19</h2>
                         <h2 class="symptomps__title">Symptomps</h2>
@@ -93,7 +108,7 @@
                     <img src="img/symptomps.svg" alt="Fever, throat pain, dypsnoea, headache, runny nose, shaking chills" class="symptomps__img">
                 </section>
 
-                <section class="protection column-center col-12">
+                <section class="protection column-center col-12" id="Prevention">
                     <div class="protection__description column-center col-6">
                         <h3 class="protection__sup-title">Covid-19</h2>
                         <h2 class="protection__title">What should we do</h2>
@@ -234,10 +249,18 @@
 
                     <div class="nav__right-panel">
                         <ul class="nav__menu">
-                            <li class="nav__item">Overview</li>
-                            <li class="nav__item">Contagion</li>
-                            <li class="nav__item">Symptoms</li>
-                            <li class="nav__item">Prevention</li>
+                            <li class="nav__item">
+                                <a href="#Overview">Overview</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#Contagion">Contagion</a> 
+                            </li>
+                            <li class="nav__item">
+                                <a href="#Symptoms">Symptoms</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#Prevention">Prevention</a> 
+                            </li>
                         </ul>
                     </div>
 
