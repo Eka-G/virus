@@ -370,3 +370,35 @@ table td:last-child {
 .feedback__button {
     padding: 26px 80px;
 }
+
+/* footer */
+footer {
+    margin-bottom: 25px;
+}
+
+.nav__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+    font-size: 23px;
+}
+
+.socil-link {
+    margin-right: 40px;
+    font-size: 22px;
+    color: #035755
+}
+
+.socil-link:last-child {
+    margin-right: 0px;
+}
+
+.fa-youtube{
+    color: #FF0000;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: #415E56;
+}
