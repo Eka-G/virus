@@ -1,4 +1,5 @@
 *, *:before, *:after {
+    position: relative;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +11,6 @@ body {
     text-transform: capitalize;
     line-height: 215%;
     color: #4B4F51;
-    background-color: #FFF8F8;
 }
 
 /* COMMON STYLES */
@@ -91,7 +91,7 @@ header {
 .nav__header{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .nav__logo {
@@ -162,7 +162,7 @@ header {
     align-items: center;
     position: relative;
     margin-bottom: 0;
-    padding: 300px 0 200px 0;
+    padding: 200px 0 200px 0;
 }
 
 .introduction__title {
@@ -223,6 +223,7 @@ header {
 
 /* contagion */
 .contagion {
+    position: relative;   
     margin-bottom: 190px;
 }
 
@@ -265,15 +266,19 @@ header {
     color: #035755;
 }
 
+.background-img--contagion {
+    position: absolute;
+    left: -127px;
+    bottom: 0;
+    box-shadow: none;
+}
+
 /* symptomps */
 .symptomps {
     margin-bottom: 155px;
 }
 
 /* protection */
-/* .protection{
-    margin-bottom: 190px;
-} */
 
 .protection__item {
     display: flex;
@@ -474,4 +479,33 @@ footer {
     text-align: center;
     color: #415E56;
 }
+
+
+/*BACKGROUND*/
+.background-img {
+    position: absolute;
+    right: 0;
+}
+
+.background-img--introduction {
+    top: 2%;
+}
+
+.background-img--about-us {
+    top: 15%;
+}
+
+.background-img--protection-left {
+    top: 58%;
+    left: 0;
+}
+
+.background-img--protection-right {
+    top: 75%;
+}
+
+.background-img--feedback {
+    bottom: 1%;
+}
+
 
