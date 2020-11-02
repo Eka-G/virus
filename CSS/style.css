@@ -1,5 +1,4 @@
 *, *:before, *:after {
-    position: relative;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,6 +9,7 @@ html {
 }
 
 body {
+    position: relative;
     font-family: 'Commissioner', sans-serif;
     font-size: 18px;
     text-transform: capitalize;
@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-    margin-bottom: 30px;
+    margin-bottom: 30px;box-
     font-family: 'Red Hat Display', sans-serif;
     font-size: 52px;
     font-weight: 700;
@@ -92,7 +92,11 @@ input:focus {
 
 /* HEADER */
 header {
-    margin-top: 30px;
+    position: sticky;
+    top: 0;
+    background-color: #FFF;
+    box-shadow: 0px 0px 8px 8px #FFF;
+    z-index: 100;
 }
 
 /* nav */
@@ -163,8 +167,9 @@ header {
     background-color: #FFF8F8;
 }
 
-/* introduction */
 
+/* MAIN */
+/* introduction */
 .introduction {
     display: flex;
     justify-content: space-between;
@@ -199,7 +204,6 @@ header {
     text-transform: capitalize;
 }
 
-/* MAIN */
 /* about-us */
 .about-us {
     display: flex;
@@ -555,13 +559,14 @@ footer {
         font-size: 25px;
     }
 
-    /*header*/
+    /* nav */
 
     .nav__item {
         margin: 10px;
     }
 
-    .introduction {
+     /*introduction*/
+     .introduction {
         padding: 50px 0 100px 0;
     }
 
@@ -727,7 +732,7 @@ footer {
         max-width: 650px;
     }
 
-    /*header*/
+    /*hnav*/
     .nav__header {
         margin-bottom: 35px;
     }
@@ -741,6 +746,7 @@ footer {
         height: 40px;
     }
 
+    /*introduction*/
     .introduction__description {
         z-index: 1;
     }
@@ -893,10 +899,12 @@ footer {
     display: none;
     }
 
+    /*nav*/
     .nav__item:last-child {
         margin-right: 10px;
     }
 
+    /*introduction*/
     .introduction__img {
         right: -70px;
         opacity: 0.5;
@@ -982,7 +990,7 @@ footer {
         font-size: 15px;
     }
 
-    /*header*/
+    /*nav*/
     .nav__header {
         margin-bottom: 15px;
     }
@@ -999,6 +1007,7 @@ footer {
         display: none;
     }
 
+    /*introduction*/
     .introduction {
         padding: 30px 0 10px 0;
     }
