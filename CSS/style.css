@@ -72,6 +72,7 @@ a:hover {
     color: #FB4C47;
 }
 
+button:focus,
 input:focus {
     outline: none;
 }
@@ -339,67 +340,82 @@ header {
 }
 
 .statistics__rating {
+    position: relative;
     padding: 55px;
-    min-width: 505px;
+    max-width: 505px;
     box-shadow: 0px 7px 95px rgba(0, 0, 0, 0.07);
     z-index: 0;
-}
-
-.statistics__heading, .statistics__table {
-    width: 100%;
-}
-
-.statistics__title {
-   font-size: 48px; 
 }
 
 .statistics__heading {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.statistics__sheets {
+.statistics__title {
+    margin-bottom: 0;
+   font-size: 48px; 
+}
+
+.statistics__slider {
+    width: 100%;
+}
+
+.statistics__arrows {
     display: flex;
+    justify-content: center;
     align-items: center;
-    max-width: 88px;
-    max-height: 50px;
+    position: relative;
+    width: 88px;
+    height: 50px;
     box-shadow: 0px 5px 50px rgba(87, 1, 0, 0.1);
     border-radius: 6px;
-    background-color: #fff;
-  }
-  
-  .statistics__controler-wrapper {
-    display: flex;
-    align-items: center;
+    background-color: #FFF;
+}
+
+.statistics__arrow-separator {
+    width: 2px;
     height: 20px;
-  }
-  
-  .statistics__controler-wrapper-left {
-    border-right: 1px solid #DEE1ED;
-  }
-  
-  .statistics__controler {
+    background-color: #DEE1ED;
+}
+
+.slick-arrow {
+    position: absolute;
     width: 10px;
     height: 10px;
     margin: 15px;
+    color: transparent;
+    border: none;
     border-left: 3px solid #A2A5B2;
     border-bottom: 3px solid #A2A5B2;
+    border-radius: 0;
+    background-color: transparent;
     transform: rotate(45deg);
-  }
+    z-index: 100;
+}
 
-  .statistics__controler-eventual {
+.slick-arrow--available {
     border-color: #F44A45;
-  }
+}
 
-  
-  .statistics__controler--next {
+.slick-prev {
+    top: -80px;
+    right: 45px;
+}
+
+.slick-next {
+    top: -80px;
+    right: 5px;
     transform: rotate(-135deg);
-  }
+}
 
 .statistics__table {
-    vertical-align: center;
+    width: 100%;
     font-weight: 700;
     color: #13615F;
+    margin-right: 5px;
 }
 
 .statistics__table td {
@@ -426,6 +442,10 @@ table td:last-child {
     padding-right: 0;
 }
 
+.slick-slide img {
+    padding-left: 5px; /*скрыть выступ следующего слайда*/
+}
+
 .statistics__table-arrow {
     width: 0px;
     height: 0px;
@@ -433,6 +453,7 @@ table td:last-child {
     border-right: 10px solid transparent;
     border-bottom: 15px solid #F44A45;
 }
+
 
 /* feedback */
 .feedback {
@@ -658,10 +679,20 @@ footer {
         margin-bottom: 130px;
     }
 
-    .statistics__heading,
-    .statistics__table {
-        width: 70%;
+    .statistics__rating {
+        max-width: 100%;
+        padding: 5% 20%;
     }
+
+    .statistics__table {
+        margin: auto;
+    }
+
+    .slick-prev,
+    .slick-next {
+    top: -75px;
+    }
+
 
     .statistics__title {
         font-size: 40px;

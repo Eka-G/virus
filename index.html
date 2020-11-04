@@ -6,9 +6,10 @@
         <meta name="keywords" content="covid, infection, virus, disease, masks, personal protective equipment, symptoms">
         <title>Covid</title>
 
-        <link rel="stylesheet" href="fontawesome/css/all.min.css">
-        <link rel="stylesheet" href="CSS/bootstrap.css">
-        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/slick.css">
+        <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Commissioner&family=Red+Hat+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
 
@@ -22,7 +23,7 @@
                     </div>
 
                     <div class="nav__right-panel">
-                        <ul class="nav__menu">
+                        <ul class="nav__menu nav__menu--header">
                             <li class="nav__item nav__item--active">
                                 <a href="#Overview">Overview</a>
                             </li>
@@ -173,70 +174,92 @@
                         <iframe src="https://yandex.ru/maps/covid19?embed=covid-map&ll=101.189643%2C26.170792&z=2" width="1000" height="600" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
                     </div>
 
-                    <div class="statistics__rating column-center">
+                    <div class="statistics__rating">
                         <div class="statistics__heading">
                             <h2 class="statistics__title">Live reports</h2>
-                            <div class="statistics__sheets">
-                                <a href="" class="statistics__sheets-link">
-                                  <div class="statistics__controler-wrapper statistics__controler-wrapper-left">
-                                    <div class="statistics__controler statistics__controler--prev"></div>
-                                  </div>
-                                </a>
-                              
-                                <a href="" class="statistics__sheets-link">
-                                  <div class="statistics__controler-wrapper">
-                                    <div class="statistics__controler statistics__controler--next statistics__controler-eventual"></div>
-                                  </div>
-                                </a>
-                              </div>
-                        </div>
+                            <div class="statistics__arrows">
+                                <div class="statistics__arrow-separator"></div>
+                            </div>
+                        </div>    
 
-                        <table class="statistics__table">
-                            <tr>
-                                <td class="statistics__table-flag"> <img src="img/statistics-1-USA.svg" alt="USA"> </td>
-                                <td class="statistics__table-country">USA</td>
-                                <td class="statistics__table-number">8 636 165</td>
-                                <td>
-                                    <div class="statistics__table-arrow"></div>
-                                </td>
-                            </tr>
+                        <div class="statistics__slider" data-slider>
+                            <table class="statistics__table">
+                                <tr>
+                                    <td class="statistics__table-flag"> <img src="img/statistics-1-USA.svg" alt="USA"> </td>
+                                    <td class="statistics__table-country">USA</td>
+                                    <td class="statistics__table-number">8 636 165</td>
+                                    <td>
+                                        <div class="statistics__table-arrow"></div>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <td class="statistics__table-flag"> <img src="img/statistics-2-India.svg" alt="India"> </td>
-                                <td class="statistics__table-country">India</td>
-                                <td class="statistics__table-number">7 909 959</td>
-                                <td>
-                                    <div class="statistics__table-arrow"></div>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td class="statistics__table-flag"> <img src="img/statistics-2-India.svg" alt="India"> </td>
+                                    <td class="statistics__table-country">India</td>
+                                    <td class="statistics__table-number">7 909 959</td>
+                                    <td>
+                                        <div class="statistics__table-arrow"></div>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <td class="statistics__table-flag"> <img src="img/statistics-3-Brazil.svg" alt="Brazil"> </td>
-                                <td class="statistics__table-country">Brazil</td>
-                                <td class="statistics__table-number">5 394 128</td>
-                                <td>
-                                    <div class="statistics__table-arrow"></div>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td class="statistics__table-flag"> <img src="img/statistics-3-Brazil.svg" alt="Brazil"> </td>
+                                    <td class="statistics__table-country">Brazil</td>
+                                    <td class="statistics__table-number">5 394 128</td>
+                                    <td>
+                                        <div class="statistics__table-arrow"></div>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <td class="statistics__table-flag"> <img src="img/statistics-4-Russia.svg" alt="Russia"> </td>
-                                <td class="statistics__table-country">Russia</td>
-                                <td class="statistics__table-number">1 513 877</td>
-                                <td>
-                                    <div class="statistics__table-arrow"></div>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td class="statistics__table-flag"> <img src="img/statistics-4-Russia.svg" alt="Russia"> </td>
+                                    <td class="statistics__table-country">Russia</td>
+                                    <td class="statistics__table-number">1 513 877</td>
+                                    <td>
+                                        <div class="statistics__table-arrow"></div>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <td class="statistics__table-flag"> <img src="img/statistics-5-France.svg" alt="France"> </td>
-                                <td class="statistics__table-country">France</td>
-                                <td class="statistics__table-number">1 130 143</td>
-                                <td>
-                                    <div class="statistics__table-arrow"></div>
-                                </td>
-                            </tr>
-                        </table>
+                                <tr>
+                                    <td class="statistics__table-flag"> <img src="img/statistics-5-France.svg" alt="France"> </td>
+                                    <td class="statistics__table-country">France</td>
+                                    <td class="statistics__table-number">1 130 143</td>
+                                    <td>
+                                        <div class="statistics__table-arrow"></div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="statistics__table">
+                                <tr>
+                                    <td class="statistics__table-flag"> <img src="img/statistics-1-USA.svg" alt="USA"> </td>
+                                    <td class="statistics__table-country">USA</td>
+                                    <td class="statistics__table-number">8 636 165</td>
+                                    <td>
+                                        <div class="statistics__table-arrow"></div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="statistics__table-flag"> <img src="img/statistics-2-India.svg" alt="India"> </td>
+                                    <td class="statistics__table-country">India</td>
+                                    <td class="statistics__table-number">7 909 959</td>
+                                    <td>
+                                        <div class="statistics__table-arrow"></div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="statistics__table-flag"> <img src="img/statistics-3-Brazil.svg" alt="Brazil"> </td>
+                                    <td class="statistics__table-country">Brazil</td>
+                                    <td class="statistics__table-number">5 394 128</td>
+                                    <td>
+                                        <div class="statistics__table-arrow"></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> <!-- statistics__slider -->
+
                     </div> <!-- statistics__rating -->
                 </section>
 
@@ -308,8 +331,10 @@
         <img src="img/back-5.svg" alt="" class="background-img background-img--protection-right">
         <img src="img/back-6.svg" alt="" class="background-img background-img--feedback">
         
-        <script src="JS/bootstrap.js"></script>
-        <script src="JS/script.js"></script>
+        <script type="text/javascript" src="JS/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="JS/slick.min.js"></script>
+        <script type="text/javascript" src="JS/bootstrap.js"></script>
+        <script type="text/javascript" src="JS/script.js"></script>
     </body>
 </html>
 
