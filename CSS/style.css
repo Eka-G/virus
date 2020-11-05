@@ -388,16 +388,16 @@ header {
     margin: 15px;
     color: transparent;
     border: none;
-    border-left: 3px solid #A2A5B2;
-    border-bottom: 3px solid #A2A5B2;
+    border-left: 3px solid #F44A45;
+    border-bottom: 3px solid #F44A45;
     border-radius: 0;
     background-color: transparent;
     transform: rotate(45deg);
     z-index: 100;
 }
 
-.slick-arrow--available {
-    border-color: #F44A45;
+.slick-arrow--unavailable {
+    border-color: #A2A5B2;
 }
 
 .slick-prev {

@@ -16,5 +16,11 @@ $(document).ready(function() {
   		slidesToScroll: 1
 	});
 
-	
+	$(".slick-prev").addClass("slick-arrow--unavailable");
+
+	$(".slick-arrow").click(function() {
+		$(this).siblings().removeClass("slick-arrow--unavailable");
+		$(this).addClass("slick-arrow--unavailable");
+	});
+
 });
