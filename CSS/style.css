@@ -118,6 +118,10 @@ header {
     align-items: center;
 }
 
+.nav__menu-toggle {
+    display: none;
+}
+
 .nav__menu {
     display: flex;
     justify-content: space-between;
@@ -1026,15 +1030,15 @@ footer {
         margin-bottom: 15px;
     }
 
-    .nav__menu:before {
+    .nav__menu-toggle {
         display: block;
-        content: "MENU";
-        margin-right: 50px;
+        text-transform: uppercase;
+        margin-right: 20px;
         font-weight: 700;
         color: #FB4C47;
     }
 
-    .nav__item {
+    .nav__menu {
         display: none;
     }
 
